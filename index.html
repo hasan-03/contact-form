@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="form">
+        <div id="heading">Contact Us</div>
+        <div id="name-input">
+            <div id="name1">
+                <h5>First Name *</h5>
+                <input id="First" type="text">
+                <span class='error' id="firsterror">This field is required</span>
+            </div>
+            <div id="name2">
+                <h5>Last Name *</h5>
+                <input id="Last" type="text">
+                <span class='error' id="lasterror">This field is required</span>
+            </div>
+        </div>
+        <div id="email">
+            <h5>Email Address *</h5>
+            <input id="Email" type="email" placeholder="example@email.com">
+            <span class='error' id="emailerror">Please enter a valid email address</span>
+        </div>
+        <div id="query">
+            <h5>Query Type *</h5>
+            <div id="general">
+                <input type="radio" id="General" value="General Query" name="query-type">
+                <label for="General">General Enquiry</label>
+            </div>
+            <div id="support">
+                <input type="radio" id="Support" value="Support Query" name="query-type">
+                <label for="Support">Support Request</label>
+            </div>
+            <span class='error' id="queryerror">Please select a query type</span>
+        </div>
+        <div id="message">
+            <h5>Message *</h5>
+            <textarea id="Message" rows="4" aria-required="true"></textarea>
+            <span class='error' id="messageerror">This field is required</span>
+        </div>
+        <div id="consent">
+            <input type="checkbox" id="Consent">
+            <label for="Consent">I consent to being contacted by the team *</label>
+            <span class='error' id="consenterror">To fill this form, please consent to being contacted</span>
+        </div>
+        <div id="submit">
+            <button id="Submit">Submit</button>
+        </div>
+        <div id="success-message">
+            <div id="img">
+                <img src="./images/icon-success-check.svg" alt="Success">
+                <div id="message-header">
+                    Message Sent!
+                </div>
+            </div>
+            <p>Thanks for completing the form. We'll be in touch soon</p>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
