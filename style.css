@@ -223,6 +223,7 @@ button:hover {
     opacity: 0;
     position: fixed;
     top: 10%;
+    left: 30vw;
     transform: translateY(-50%);
     font-size: 14px;
 }
